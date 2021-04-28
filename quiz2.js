@@ -5,7 +5,7 @@ var data = $.getJSON(dataUrl);
 data.done( function( msg ) {
   console.log(msg.item);
   $.each(msg.items, function(i, item){
-    $("#contain").append($("<img/>").attr("src", item.media.m));
+    $("#contain").append($("<img/>").attr("src", item.id));
   });
 });
 
